@@ -1,0 +1,42 @@
+软件介绍视频：
+1.   http://v.youku.com/v_show/id_XNTc3ODE3NzA4.html?f=22173210
+2.   http://v.youku.com/v_show/id_XNzAyODMzNjA4.html
+软件安装文件下载：
+     http://pan.baidu.com/s/1bnEf2zl
+
+
+国外开放IP Camera在线访问地址：
+   (1)名称：美国华盛顿街市摄像头   
+      IP:http://towercam.uu.edu/axis-cgi/mjpg/video.cgi 
+      地址：美国
+      经纬度：39.504041 -99.624023
+   (2)名称：西班牙加那利天体物理大学摄像头   
+      IP:http://iris.not.iac.es/axis-cgi/mjpg/video.cgi  
+      地址：西班牙加那利天体物理大学  
+      经纬度：40.463667,-3.74922
+报警检测邮箱：
+邮箱名：Cameravision@126.com 密码：Camera
+
+Mjpeg格式：
+              http://towercam.uu.edu/axis-cgi/mjpg/video.cgi
+Skrea strand: http://212.162.177.75/axis-cgi/mjpg/video.cgi
+ris:          http://iris.not.iac.es/axis-cgi/mjpg/video.cgi
+              http://213.129.248.131/axis-cgi/mjpg/video.cgi
+Molde         http://158.38.82.16/axis-cgi/mjpg/video.cgi
+              http://webcam.gcrl.uiuc.edu/axis-cgi/mjpg/video.cgi
+
+
+jpeg格式:
+              http://www.gtc.iac.es/multimedia/netcam/camaraExt.jpg                 
+              http://217.168.94.131/axis-cgi/jpg/image.cgi?resolution=320x240            
+              http://217.168.94.131/axis-cgi/jpg/image.cgi?resolution=640x480
+              http://www.gtc.iac.es/multimedia/webcamPopup.php?webcam=skycam
+              http://www.gtc.iac.es/multimedia/webcamPopup.php?webcam=interior
+Kite Loft:    http://aigweb.net:8080/netcam.jpg
+UCS Roach:    http://129.252.89.30/netcam.jpg
+
+
+
+
+
+

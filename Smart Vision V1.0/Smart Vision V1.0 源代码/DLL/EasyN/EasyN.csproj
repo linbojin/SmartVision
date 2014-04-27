@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{22DE2F83-CBB6-41CE-9B9B-C5A353F5CBA4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EasyN</RootNamespace>
+    <AssemblyName>EasyN</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EasyNCamera.cs" />
+    <Compile Include="EasyNCameraSetupPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EasyNCameraSetupPage.Designer.cs">
+      <DependentUpon>EasyNCameraSetupPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EasyNConfiguration.cs" />
+    <Compile Include="MultimodeVideoSource.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EasyNSourceDescription.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EasyNCameraSetupPage.resx">
+      <DependentUpon>EasyNCameraSetupPage.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\jpeg\jpeg.csproj">
+      <Project>{41262D0E-35ED-4D0E-9D77-A05F71C32752}</Project>
+      <Name>jpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mjpeg\mjpeg.csproj">
+      <Project>{F504EA6E-26AF-4175-8CB2-25BC77A455B0}</Project>
+      <Name>mjpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\videosource\videosource.csproj">
+      <Project>{1D33DC63-AC6B-4F76-B60F-9E620E36F9B0}</Project>
+      <Name>videosource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{96195AA8-CAF4-4A55-BEC3-9F91D437604E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IPCamera</RootNamespace>
+    <AssemblyName>智慧监控</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Imaging, Version=2.2.4.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Vision, Version=2.2.4.0, Culture=neutral, PublicKeyToken=b612fa915eefaa06, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tiger.Video.VFW, Version=1.0.1946.25748, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Tiger.Video.VFW.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="子窗体\摄像头地理信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="子窗体\摄像头地理信息.Designer.cs">
+      <DependentUpon>摄像头地理信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="子窗体\移动布防.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="子窗体\移动布防.Designer.cs">
+      <DependentUpon>移动布防.cs</DependentUpon>
+    </Compile>
+    <Compile Include="子窗体\邮件报警.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="子窗体\邮件报警.Designer.cs">
+      <DependentUpon>邮件报警.cs</DependentUpon>
+    </Compile>
+    <Compile Include="子窗体\检测提示.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="子窗体\检测提示.designer.cs">
+      <DependentUpon>检测提示.cs</DependentUpon>
+    </Compile>
+    <Compile Include="子窗体\欢迎.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="子窗体\欢迎.designer.cs">
+      <DependentUpon>欢迎.cs</DependentUpon>
+    </Compile>
+    <Compile Include="子窗体\播放器.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="子窗体\播放器.Designer.cs">
+      <DependentUpon>播放器.cs</DependentUpon>
+    </Compile>
+    <Compile Include="子窗体\登入界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="子窗体\登入界面.designer.cs">
+      <DependentUpon>登入界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="核心类\Camera.cs" />
+    <Compile Include="核心类\CameraCGI.cs" />
+    <Compile Include="核心类\CameraCollection.cs" />
+    <Compile Include="核心类\Configuration.cs" />
+    <Compile Include="核心类\FinalizationPool.cs" />
+    <Compile Include="核心类\Fuction.cs" />
+    <Compile Include="核心类\IWizardPage.cs" />
+    <Compile Include="核心类\RunningPool.cs" />
+    <Compile Include="核心类\VideoProvider.cs" />
+    <Compile Include="核心类\VideoProviderCollection.cs" />
+    <Compile Include="核心类\View.cs" />
+    <Compile Include="核心类\ViewCollection.cs" />
+    <Compile Include="核心类\Win32.cs" />
+    <Compile Include="自定义控件\云台控制.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\云台控制.Designer.cs">
+      <DependentUpon>云台控制.cs</DependentUpon>
+    </Compile>
+    <Compile Include="子窗体\图像参数设置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="子窗体\图像参数设置.Designer.cs">
+      <DependentUpon>图像参数设置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="子窗体\关于我们.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="子窗体\关于我们.Designer.cs">
+      <DependentUpon>关于我们.cs</DependentUpon>
+    </Compile>
+    <Compile Include="子窗体\摄像头信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="子窗体\摄像头信息.Designer.cs">
+      <DependentUpon>摄像头信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="子窗体\摄像头新增窗体.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="子窗体\摄像头新增窗体.Designer.cs">
+      <DependentUpon>摄像头新增窗体.cs</DependentUpon>
+    </Compile>
+    <Compile Include="子窗体\摄像头配置窗体.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="子窗体\摄像头配置窗体.Designer.cs">
+      <DependentUpon>摄像头配置窗体.cs</DependentUpon>
+    </Compile>
+    <Compile Include="子窗体\新增向导模板.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="子窗体\新增向导模板.Designer.cs">
+      <DependentUpon>新增向导模板.cs</DependentUpon>
+    </Compile>
+    <Compile Include="智慧监控.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="智慧监控.Designer.cs">
+      <DependentUpon>智慧监控.cs</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\CameraWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="自定义控件\CameraWindow.Designer.cs">
+      <DependentUpon>CameraWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="子窗体\配置窗体模板.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="子窗体\配置窗体模板.Designer.cs">
+      <DependentUpon>配置窗体模板.cs</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\Multiplexer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="自定义控件\Multiplexer.designer.cs">
+      <DependentUpon>Multiplexer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\地图控件.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\地图控件.designer.cs">
+      <DependentUpon>地图控件.cs</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\摄像头描述.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\摄像头描述.Designer.cs">
+      <DependentUpon>摄像头描述.cs</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\摄像头配置.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="自定义控件\摄像头配置.Designer.cs">
+      <DependentUpon>摄像头配置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="自定义控件\菜单栏单选.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="子窗体\摄像头地理信息.resx">
+      <DependentUpon>摄像头地理信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="子窗体\移动布防.resx">
+      <DependentUpon>移动布防.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="子窗体\邮件报警.resx">
+      <DependentUpon>邮件报警.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="子窗体\检测提示.resx">
+      <DependentUpon>检测提示.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="子窗体\欢迎.resx">
+      <DependentUpon>欢迎.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="子窗体\播放器.resx">
+      <DependentUpon>播放器.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="子窗体\登入界面.resx">
+      <DependentUpon>登入界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\云台控制.resx">
+      <DependentUpon>云台控制.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="子窗体\关于我们.resx">
+      <DependentUpon>关于我们.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="子窗体\图像参数设置.resx">
+      <DependentUpon>图像参数设置.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="子窗体\摄像头信息.resx">
+      <DependentUpon>摄像头信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="子窗体\新增向导模板.resx">
+      <DependentUpon>新增向导模板.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="智慧监控.resx">
+      <DependentUpon>智慧监控.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="子窗体\配置窗体模板.resx">
+      <DependentUpon>配置窗体模板.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\CameraWindow.resx">
+      <DependentUpon>CameraWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\Multiplexer.resx">
+      <DependentUpon>Multiplexer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\地图控件.resx">
+      <DependentUpon>地图控件.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\摄像头描述.resx">
+      <DependentUpon>摄像头描述.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="自定义控件\摄像头配置.resx">
+      <DependentUpon>摄像头配置.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DLL\EasyN\EasyN.csproj">
+      <Project>{22DE2F83-CBB6-41CE-9B9B-C5A353F5CBA4}</Project>
+      <Name>EasyN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLL\jpeg\jpeg.csproj">
+      <Project>{41262D0E-35ED-4D0E-9D77-A05F71C32752}</Project>
+      <Name>jpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLL\local\local.csproj">
+      <Project>{8892D4E1-BDA5-4131-9567-DB9F42631616}</Project>
+      <Name>local</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLL\mjpeg\mjpeg.csproj">
+      <Project>{F504EA6E-26AF-4175-8CB2-25BC77A455B0}</Project>
+      <Name>mjpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLL\videosource\videosource.csproj">
+      <Project>{1D33DC63-AC6B-4F76-B60F-9E620E36F9B0}</Project>
+      <Name>videosource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\monitor7.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\monitor7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\monitor5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera7.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
