@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "智慧监控", "智慧监控\智慧监控.csproj", "{96195AA8-CAF4-4A55-BEC3-9F91D437604E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dshow", "DLL\dshow\dshow.csproj", "{5EC8A299-78F8-4BDC-95D7-1AF66A01A073}"
@@ -14,8 +14,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "videosource", "DLL\videosource\videosource.csproj", "{1D33DC63-AC6B-4F76-B60F-9E620E36F9B0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyN", "DLL\EasyN\EasyN.csproj", "{22DE2F83-CBB6-41CE-9B9B-C5A353F5CBA4}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SmartVision", "SmartVision\SmartVision.vdproj", "{42913CBE-7566-44DD-89C0-58BDD94C325F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,14 +111,6 @@ Global
 		{22DE2F83-CBB6-41CE-9B9B-C5A353F5CBA4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{22DE2F83-CBB6-41CE-9B9B-C5A353F5CBA4}.Release|Win32.ActiveCfg = Release|Any CPU
 		{22DE2F83-CBB6-41CE-9B9B-C5A353F5CBA4}.Release|x86.ActiveCfg = Release|Any CPU
-		{42913CBE-7566-44DD-89C0-58BDD94C325F}.Debug|Any CPU.ActiveCfg = Debug
-		{42913CBE-7566-44DD-89C0-58BDD94C325F}.Debug|Mixed Platforms.ActiveCfg = Debug
-		{42913CBE-7566-44DD-89C0-58BDD94C325F}.Debug|Win32.ActiveCfg = Debug
-		{42913CBE-7566-44DD-89C0-58BDD94C325F}.Debug|x86.ActiveCfg = Debug
-		{42913CBE-7566-44DD-89C0-58BDD94C325F}.Release|Any CPU.ActiveCfg = Release
-		{42913CBE-7566-44DD-89C0-58BDD94C325F}.Release|Mixed Platforms.ActiveCfg = Release
-		{42913CBE-7566-44DD-89C0-58BDD94C325F}.Release|Win32.ActiveCfg = Release
-		{42913CBE-7566-44DD-89C0-58BDD94C325F}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
