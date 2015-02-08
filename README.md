@@ -9,21 +9,18 @@ Development Environment: Visual Studio 2012
 Operating System: Window 7, 32bit
 
 System Framework
-![SmartVision](https://github.com/linbojin/SmartVision/raw/master/Smart%20Vision%20V1.0/doc/Framework.PNG)
+![SmartVision](https://raw.githubusercontent.com/linbojin/SmartVision/master/Smart%20Vision%20V1.0/doc/Framework.png)
 
 GUI
-![SmartVision](https://github.com/linbojin/SmartVision/raw/master/Smart%20Vision%20V1.0/doc/Windows.PNG)
+![SmartVision](https://raw.githubusercontent.com/linbojin/SmartVision/master/Smart%20Vision%20V1.0/doc/Windows.png)
 
 Classes
-![SmartVision](https://github.com/linbojin/SmartVision/raw/master/Smart%20Vision%20V1.0/doc/Classes.PNG)
-![SmartVision](https://github.com/linbojin/SmartVision/raw/master/Smart%20Vision%20V1.0/doc/Classlevels.PNG)
+![SmartVision](https://raw.githubusercontent.com/linbojin/SmartVision/master/Smart%20Vision%20V1.0/doc/Classes.png)
+![SmartVision](https://raw.githubusercontent.com/linbojin/SmartVision/master/Smart%20Vision%20V1.0/doc/Classlevels.png)
 
 Interfaces and Events
-![SmartVision](https://github.com/linbojin/SmartVision/raw/master/Smart%20Vision%20V1.0/doc/Events.PNG)
-![SmartVision](https://github.com/linbojin/SmartVision/raw/master/Smart%20Vision%20V1.0/doc/VideoSource.PNG)
-
-Demo: http://v.youku.com/v_show/id_XNTc3ODE3NzA4.html
-[DemoVideo1](http://v.youku.com/v_show/id_XNTc0MTE5NjY0.html)  
+![SmartVision](https://raw.githubusercontent.com/linbojin/SmartVision/master/Smart%20Vision%20V1.0/doc/Events.png)
+![SmartVision](https://raw.githubusercontent.com/linbojin/SmartVision/master/Smart%20Vision%20V1.0/doc/VideoSource.png)
 
 ##Author
 **Linbo Jin**
