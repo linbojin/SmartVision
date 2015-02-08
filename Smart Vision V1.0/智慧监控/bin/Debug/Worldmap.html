@@ -1,0 +1,86 @@
+﻿
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Google Map</title>
+     <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAjU0EJWnWPMv7oQ-jjS7dYxSPW5CJgpdgO_s4yyMovOaVh_KvvhSfpvagV18eOyDWu7VytS6Bi1CWxw"
+             type="text/javascript"></script>
+    <script type="text/javascript">
+
+        //清华大学经纬度
+        //纬度：116.32593512535095
+        //经度：40.00362935169808
+        var map;
+        var latlng;
+        var myOptions;
+        //    var mk1;
+
+        function load() {
+            map = new GMap2(document.getElementById("map"));
+            map.enableContinuousZoom();
+            map.enableGoogleBar();
+            map.setUIToDefault();
+            map.enableScrollWheelZoom();
+            //        map.addControl(new GSmallMapControl());
+            //	    map.addControl(new GMapTypeControl());
+            map.setCenter(new GLatLng(39, 116), 5);
+            var keyboard = new GKeyboardHandler(map);
+        }
+
+        function clearallmarker() {
+            map.clearOverlays();
+        }
+
+        function movemarker(w, j, i, add) {
+
+            var point = new GLatLng(w, j);
+            map.setCenter(point, 15);
+            var mk1 = new GMarker(point);
+            GEvent.addListener(mk1, "mouseover", function () {
+                mk1.openInfoWindowHtml(i.toString() + " " + mk1.getPoint().toString() + "<br>" + "地址：" + add.toString());
+            });
+
+            GEvent.addListener(mk1, "mouseout", function () {
+                mk1.closeInfoWindow();
+            });
+
+
+            GEvent.addListener(map, "click", function (mk1, point) {
+                if (mk1) {
+                    map.removeOverlay(mk1);
+                }
+                else {
+                    var myMarker = new GMarker(point, { draggable: true });
+                    map.addOverlay(myMarker);
+                    GEvent.addListener(myMarker, "mouseover", function () {
+                        myMarker.openInfoWindowHtml("经纬度" + myMarker.getLatLng().toUrlValue(6));
+                    });
+                }
+            });
+
+
+            function viewpoint() {
+                mk1.openInfoWindowHtml(i.toString() + " " + mk1.getPoint().toString() + "<br>" + "地址：" + add.toString());
+            }
+
+            var p = new GLatLng(w, j);
+            mk1.setPoint(p);
+
+            map.addOverlay(mk1);
+            viewpoint();
+        }
+
+
+
+        function flyto(weidu, jingdu) {
+            map.panTo(new GLatLng(weidu, jingdu));
+        }
+	
+    
+    </script>
+</head>
+<body onload="load()">
+    <div id="map" style="width: 100%; height: 100%"></div>
+
+</body>
+</html>
