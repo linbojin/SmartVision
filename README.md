@@ -24,10 +24,3 @@ Interfaces <br/>
 
 Events<br/>
 ![SmartVision](https://raw.githubusercontent.com/linbojin/SmartVision/master/Smart%20Vision%20V1.0/doc/Events.png)
-
-
-##Author
-**Linbo Jin**
-
-+ http://Linbo.me
-+ http://boyer.linbo.me
